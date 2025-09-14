@@ -401,14 +401,14 @@ const articleData = {
         category: "lifestyle",
         date: "2025-08-25",
         author: "Michelle Roberts",
-        image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1200&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=1200&h=600&fit=crop",
         content: `
             <p>When it comes to school clothing and everyday wear for kids and teens, finding the perfect balance between durability, comfort, and style can be challenging. French Toast has emerged as a leading provider of quality school uniforms and casual wear that meets the demands of active young lifestyles while maintaining affordability and style.</p>
 
             <h2>The Importance of Quality School Clothing</h2>
             <p>School clothing endures daily wear and tear that regular clothes rarely face. From playground activities to classroom projects, cafeteria spills to after-school sports, children's clothing must withstand constant use while maintaining a presentable appearance. Quality school uniforms and clothing provide not just durability but also confidence for students throughout their educational journey.</p>
 
-            <img src="https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=800&h=400&fit=crop" alt="School Uniforms Display">
+            <img src="https://images.unsplash.com/photo-1564429238817-393bd4286b2d?w=800&h=400&fit=crop" alt="School Uniforms Display">
 
             <h2>Comfort Meets Performance</h2>
             <p>Modern school clothing has evolved beyond stiff, uncomfortable uniforms of the past. Today's designs incorporate stretch fabrics, moisture-wicking technology, and ergonomic cuts that allow for natural movement. French Toast specializes in creating clothing that feels as good as it looks, using soft cotton blends and innovative materials that keep students comfortable from morning bell to after-school activities.</p>
@@ -417,8 +417,8 @@ const articleData = {
             <p>The best school clothing incorporates features that support an active lifestyle. Reinforced knees on pants prevent wear-through, adjustable waistbands accommodate growth spurts, and stain-resistant treatments keep clothes looking fresh. These practical elements ensure clothing lasts throughout the school year while maintaining a polished appearance.</p>
 
             <div class="article-image-grid">
-                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop" alt="Students in Uniforms">
-                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="School Activities">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop" alt="Students in Uniforms">
+                <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=400&h=300&fit=crop" alt="School Activities">
             </div>
 
             <h2>Beyond the Classroom: Versatile Everyday Wear</h2>
@@ -434,7 +434,7 @@ const articleData = {
             <h2>Sustainability and Value</h2>
             <p>In an era of fast fashion, choosing durable school clothing represents both economic and environmental wisdom. Well-made uniforms and casual wear can be passed down to younger siblings or donated to others in need. This longevity reduces textile waste while providing excellent value for families. French Toast's commitment to quality ensures their clothing maintains its shape, color, and integrity through countless wears and washes.</p>
 
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=400&fit=crop" alt="Happy Students">
+            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&h=400&fit=crop" alt="Happy Students">
 
             <h2>Size-Inclusive Options for Every Student</h2>
             <p>Every child deserves clothing that fits well and makes them feel confident. French Toast offers extensive size ranges including regular, slim, plus, and husky fits, ensuring every student can find comfortable, flattering options. This inclusive approach recognizes that children come in all shapes and sizes, and everyone deserves quality clothing that fits properly.</p>
