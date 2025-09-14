@@ -111,6 +111,20 @@ const blogArticles = [
 
         Whether you're looking to acquire new skills, change careers, or pursue personal interests, find the platform that offers the best combination of content quality, affordability, and recognized credentials.`,
         author: "Thomas Garcia"
+    },
+    {
+        id: 9,
+        title: "Discover Durable and Comfortable Clothing for School & Beyond",
+        category: "lifestyle",
+        date: "2025-08-25",
+        image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&h=400&fit=crop",
+        excerpt: "Find the perfect balance between durability, comfort, and style with quality school uniforms and everyday wear for active kids and teens.",
+        content: `When it comes to school clothing and everyday wear for kids and teens, finding the perfect balance between durability, comfort, and style can be challenging. French Toast has emerged as a leading provider of quality school uniforms and casual wear.
+
+        From reinforced knees to moisture-wicking fabrics, modern school clothing incorporates features that support active lifestyles. Learn about smart shopping strategies for growing kids and discover how quality clothing can boost confidence and performance.
+
+        Explore size-inclusive options, sustainability benefits, and care tips that extend the life of school clothing while maintaining affordability for families.`,
+        author: "Michelle Roberts"
     }
 ];
 
