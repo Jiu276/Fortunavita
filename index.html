@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortunavita - Lifestyle & Wellness Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Fortunavita</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=600&fit=crop" alt="Technology and Nature">
+                <div class="slide-content">
+                    <h1>Welcome to Fortunavita</h1>
+                    <p>Your Gateway to Wellness, Technology & Lifestyle</p>
+                    <a href="#blog" class="btn-primary">Explore Articles</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=600&fit=crop" alt="Business Success">
+                <div class="slide-content">
+                    <h1>Platform Reviews</h1>
+                    <p>In-depth Analysis of Digital Platforms</p>
+                    <a href="#products" class="btn-primary">View Reviews</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1600&h=600&fit=crop" alt="Wellness Living">
+                <div class="slide-content">
+                    <h1>Product Recommendations</h1>
+                    <p>Curated Selection for Better Living</p>
+                    <a href="#products" class="btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+
+            <!-- Search and Filter -->
+            <div class="blog-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="category-filter">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="technology">Technology</option>
+                        <option value="wellness">Wellness</option>
+                        <option value="business">Business</option>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="platform-review">Platform Reviews</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Articles will be dynamically loaded here -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products & Reviews</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Premium Headphones">
+                    <div class="product-content">
+                        <h3>Premium Wireless Headphones</h3>
+                        <p class="product-category">Technology</p>
+                        <p>Experience crystal-clear audio with active noise cancellation and 30-hour battery life.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5/5</span>
+                        </div>
+                        <a href="article.html?id=1" class="btn-secondary">Read Review</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop" alt="Yoga Mat">
+                    <div class="product-content">
+                        <h3>Eco-Friendly Yoga Mat</h3>
+                        <p class="product-category">Wellness</p>
+                        <p>Non-slip, sustainable materials perfect for your daily practice and meditation sessions.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0/5</span>
+                        </div>
+                        <a href="article.html?id=2" class="btn-secondary">Read Review</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&h=300&fit=crop" alt="Smart Watch">
+                    <div class="product-content">
+                        <h3>Smart Fitness Watch</h3>
+                        <p class="product-category">Technology</p>
+                        <p>Track your health metrics, workouts, and stay connected with this elegant smartwatch.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <a href="article.html?id=3" class="btn-secondary">Read Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Fortunavita</h2>
+                    <p>Fortunavita is your trusted source for lifestyle insights, product recommendations, and platform reviews. We believe in empowering our readers with knowledge that enhances their daily lives.</p>
+                    <p>Our team of experts carefully curates content across technology, wellness, business, and lifestyle categories to bring you the most valuable information and honest reviews.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Articles Published</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Monthly Readers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Products Reviewed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>General Inquiry</option>
+                                <option>Product Review Request</option>
+                                <option>Partnership</option>
+                                <option>Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@fortunavita.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Wellness Street, Health City, HC 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Fortunavita</span>
+                    </div>
+                    <p>Your trusted source for lifestyle, wellness, and technology insights.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for weekly updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fortunavita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
