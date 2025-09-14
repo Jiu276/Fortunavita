@@ -408,7 +408,7 @@ const articleData = {
             <h2>The Importance of Quality School Clothing</h2>
             <p>School clothing endures daily wear and tear that regular clothes rarely face. From playground activities to classroom projects, cafeteria spills to after-school sports, children's clothing must withstand constant use while maintaining a presentable appearance. Quality school uniforms and clothing provide not just durability but also confidence for students throughout their educational journey.</p>
 
-            <img src="https://images.unsplash.com/photo-1492462543947-040389c4a456?w=800&h=400&fit=crop" alt="School Uniforms Display">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=400&fit=crop" alt="School Uniforms Display">
 
             <h2>Comfort Meets Performance</h2>
             <p>Modern school clothing has evolved beyond stiff, uncomfortable uniforms of the past. Today's designs incorporate stretch fabrics, moisture-wicking technology, and ergonomic cuts that allow for natural movement. French Toast specializes in creating clothing that feels as good as it looks, using soft cotton blends and innovative materials that keep students comfortable from morning bell to after-school activities.</p>
