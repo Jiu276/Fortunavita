@@ -125,6 +125,20 @@ const blogArticles = [
 
         Explore size-inclusive options, sustainability benefits, and care tips that extend the life of school clothing while maintaining affordability for families.`,
         author: "Michelle Roberts"
+    },
+    {
+        id: 10,
+        title: "Durable & Comfortable School Wear for Every Student",
+        category: "lifestyle",
+        date: "2025-08-20",
+        image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=400&fit=crop",
+        excerpt: "Explore the essential features that make school clothing both durable and comfortable, ensuring students can focus on learning while looking their best.",
+        content: `Finding the perfect balance between durability, comfort, and style in school clothing is crucial for student success. Quality school wear must withstand daily activities while providing the comfort needed for long school days.
+
+        Modern school uniforms incorporate advanced fabric technologies, including moisture-wicking materials and stretch fabrics that move with students. French Toast leads the industry with innovative designs that combine traditional school wear aesthetics with contemporary comfort features.
+
+        Learn about sizing options, care instructions, and the long-term value of investing in quality school clothing that supports student confidence and academic achievement.`,
+        author: "Emma Rodriguez"
     }
 ];
 
