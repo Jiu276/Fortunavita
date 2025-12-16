@@ -507,6 +507,53 @@ const articleData = {
         `,
         tags: ["School Wear", "Student Clothing", "Durable Fashion", "Comfortable Uniforms", "French Toast"],
         relatedArticles: [9, 3, 7]
+    },
+    11: {
+        title: "Jessops' Best Offers: Save on Lenses, Drones & Telescopes",
+        category: "technology",
+        date: "2025-12-12",
+        author: "Daniel Moore",
+        image: "jessops1.png",
+        hideFeaturedImage: true,
+        content: `
+            <p>Looking to upgrade your kit before the next big shoot? <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a> has stacked its winter promotion calendar with deep savings on essentials across optics and aerial gear. Whether you need sharper <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">lenses</a>, a nimble <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">drone</a>, or a powerful <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">telescope</a>, the retailer’s curated bundles make it easy to stretch your budget.</p>
+
+            <p>I popped into a local <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a> over the weekend, and the staff were swapping field stories about shooting frosty sunrises with discounted stabilised <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">zoom lenses</a>. That human guidance—“this kit can take a knock on a windy pier”—matters more than any spec sheet. It’s an easy reminder that good deals feel better when someone who’s used the gear walks you through it.</p>
+
+            <h2>Why Shop These Jessops Deals Now</h2>
+            <p>Seasonal price drops on camera bodies and glass rarely align with accessory discounts. This round, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a> pairs instant savings with trade-in bonuses, making it the ideal moment to retire aging gear. Cashback offers on popular zoom and prime <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">lenses</a> can shave hundreds off your upgrade, while drone bundles include extra batteries and ND filters for the price of a single kit elsewhere.</p>
+
+            <img src="jessops2.png" alt="Camera lenses and photography gear on display">
+
+            <h2>Standout Offers on Lenses</h2>
+            <p>From fast portrait primes to versatile travel zooms, the current lineup emphasizes optical quality and stabilization. Look for weather-sealed <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">lenses</a> paired with extended warranty promos, ideal for creators who shoot in unpredictable conditions.</p>
+
+            <div class="article-image-grid">
+                <img src="https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?w=400&h=300&fit=crop" alt="Drone flying over coastline">
+                <img src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?w=400&h=300&fit=crop" alt="Telescope pointed at the night sky">
+            </div>
+
+            <h2>Drone Bundles Built for Travel</h2>
+            <p>Frequent flyers will appreciate lightweight <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">drones</a> packaged with foldable controllers and hard cases. Selected models include obstacle avoidance and 4K60 capture, giving aerial storytellers pro-grade footage without the bulk.</p>
+
+            <h2>Telescopes for Beginners and Hobbyists</h2>
+            <p>Night-sky fans can grab entry-level reflector and refractor <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">telescopes</a> that ship with smartphone adapters for easy astrophotography. Bundle pricing lowers the barrier to exploring lunar details and bright nebulae from your backyard.</p>
+
+            <p>Soft-sell but real talk: pairing a discounted travel tripod with a compact <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a> aerial kit saved me from lugging a gimbal on a cliff hike last spring. One less thing to carry meant more time framing shots and less time worrying about gear.</p>
+
+            <blockquote>
+                "Pairing discounts with value-added accessories is what sets these <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a> offers apart—creators keep more cash for the next adventure."
+            </blockquote>
+
+            <h2>How to Maximize the Savings</h2>
+            <p>Stack loyalty points with limited-time rebates, and check open-box sections for additional markdowns on display units. If you are upgrading a camera body alongside <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">lenses</a> or aerial kits, ask in-store staff about package pricing—they often mirror online deals while adding in-person setup support.</p>
+
+            <p>Before you check out, run a quick feel-and-fit test: hold the body with your new <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">lens</a>, see how it balances with a strap, and ask the team to pop in a spare battery from the <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a> bundle. Little checks like this make sure the bargain actually fits your hands, not just your spreadsheet.</p>
+
+            <p>These promotions won’t last beyond the December rush, so lock in your picks early. With the right bundle from <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=dcf6aBt161DLgodJN2xJ4_avbIcmOhMuA5iKC0jlVWxQ760rjpifBhDRybTFC03raVBHg&new=https%3A%2F%2Fwww.jessops.com%2F">Jessops</a>, you can head into the new year fully equipped to capture every moment—on the ground, in the air, and under the stars. And if you walk out smiling because someone helped you pick the right strap or memory card, that’s the kind of quiet win no banner can match.</p>
+        `,
+        tags: ["Jessops", "Camera Deals", "Lenses", "Drones", "Telescopes"],
+        relatedArticles: [2, 5, 6]
     }
 };
 
@@ -531,8 +578,15 @@ function loadArticle() {
     document.getElementById('articleCategory').textContent = article.category;
     document.getElementById('articleAuthor').textContent = article.author;
     document.getElementById('articleDate').textContent = formatDate(article.date);
-    document.getElementById('articleImage').src = article.image;
-    document.getElementById('articleImage').alt = article.title;
+    const featuredImage = document.getElementById('articleImage');
+    const featuredWrapper = document.querySelector('.article-featured-image');
+    if (article.hideFeaturedImage) {
+        featuredWrapper.style.display = 'none';
+    } else {
+        featuredWrapper.style.display = '';
+        featuredImage.src = article.image;
+        featuredImage.alt = article.title;
+    }
     document.getElementById('articleContent').innerHTML = article.content;
 
     // Update page title

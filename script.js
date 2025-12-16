@@ -139,6 +139,18 @@ const blogArticles = [
 
         Learn about sizing options, care instructions, and the long-term value of investing in quality school clothing that supports student confidence and academic achievement.`,
         author: "Emma Rodriguez"
+    },
+    {
+        id: 11,
+        title: "Jessops' Best Offers: Save on Lenses, Drones & Telescopes",
+        category: "technology",
+        date: "2025-12-12",
+        image: "jessops1.png",
+        excerpt: "Explore the latest Jessops deals on lenses, drones, and telescopes, with bundles and cashback offers that make upgrading your gear more affordable this season.",
+        content: `Jessops is rolling out stacked savings on optics, aerial gear, and astronomy essentials just in time for year-end shooting. Expect cashback on popular zoom and prime lenses, lightweight drone kits with extra batteries, and entry-level telescopes bundled with smartphone adapters for easy skywatching.
+
+        The value goes beyond sticker prices: trade-in bonuses help you retire aging equipment, while accessory bundles add batteries, ND filters, and cases without inflating the cost. If you're planning to refresh your kit for 2026 projects, this is a prime window to upgrade without overspending.`,
+        author: "Daniel Moore"
     }
 ];
 
@@ -155,7 +167,7 @@ const contactForm = document.getElementById('contactForm');
 // Pagination variables
 let currentPage = 1;
 const articlesPerPage = 6;
-let filteredArticles = [...blogArticles];
+let filteredArticles = [...blogArticles].sort((a, b) => new Date(b.date) - new Date(a.date));
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
