@@ -151,6 +151,18 @@ const blogArticles = [
 
         The value goes beyond sticker prices: trade-in bonuses help you retire aging equipment, while accessory bundles add batteries, ND filters, and cases without inflating the cost. If you're planning to refresh your kit for 2026 projects, this is a prime window to upgrade without overspending.`,
         author: "Daniel Moore"
+    },
+    {
+        id: 12,
+        title: "Lenovo Gaming: High-Performance PCs, Laptops & Handhelds",
+        category: "technology",
+        date: "2025-12-08",
+        image: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800&h=400&fit=crop",
+        excerpt: "Dive into Lenovo gaming PCs, laptops, and handhelds that balance high performance with smart design for everyday players and competitive gamers alike.",
+        content: `From overclocked towers to slim gaming notebooks and handheld PCs, Lenovo is building a family of hardware that feels tuned for real-world players rather than just benchmark charts.
+
+        Thoughtful details like stronger cooling, tuned keyboards and generous ports show up the longer you play, turning a good gaming purchase into a system you quietly rely on night after night.`,
+        author: "Mark Stevens"
     }
 ];
 
