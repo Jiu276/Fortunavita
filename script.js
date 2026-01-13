@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displayArticles();
     setupEventListeners();
     initializeSlider();
+    initCookieBanner();
 });
 
 // Display articles with pagination
@@ -430,3 +431,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.product-card, .stat, .info-item');
     animatedElements.forEach(el => observer.observe(el));
 });
+
+// Basic cookie consent banner
+const COOKIE_KEY = 'cookie-consent-v1';
+function initCookieBanner() {
+    if (localStorage.getItem(COOKIE_KEY)) return;
+
+    const banner = document.createElement('div');
+    banner.id = 'cookie-banner';
+    banner.style.cssText = 'position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;display:flex;align-items:center;gap:12px;padding:12px 16px;background:#111;color:#fff;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.25);flex-wrap:wrap;';
+    banner.innerHTML = `
+        <div style="flex:1;min-width:240px;">We use cookies to improve your experience. Manage preferences anytime.</div>
+        <button id="cookie-accept" style="background:#22c55e;color:#fff;border:0;border-radius:6px;padding:8px 12px;cursor:pointer;">Accept All</button>
+        <button id="cookie-manage" style="background:#fff;color:#111;border:0;border-radius:6px;padding:8px 12px;cursor:pointer;">Manage Preferences</button>
+    `;
+
+    document.body.appendChild(banner);
+
+    const acceptBtn = document.getElementById('cookie-accept');
+    const manageBtn = document.getElementById('cookie-manage');
+
+    acceptBtn.addEventListener('click', () => {
+        localStorage.setItem(COOKIE_KEY, JSON.stringify({ accepted: true, ts: Date.now() }));
+        banner.remove();
+        // TODO: trigger non-essential scripts after consent
+    });
+
+    manageBtn.addEventListener('click', () => {
+        alert('Please implement your cookie preferences modal or page here.');
+    });
+}

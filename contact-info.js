@@ -7,8 +7,13 @@
         email: {
             // Base64 encoded: hubertarndt169996vdx@gmail.com
             parts: ['aHViZXJ0YXJuZHQxNjk5OTZ2ZHhAZ21haWwuY29t'],
+            decoded: null,
             decode: function() {
-                return atob(this.parts[0]);
+                // Cache to avoid repeated atob work
+                if (!this.decoded) {
+                    this.decoded = atob(this.parts.join(''));
+                }
+                return this.decoded;
             }
         },
         phone: {
@@ -43,51 +48,32 @@
         return contactData.phone.format();
     }
     
-    // Get department email
-    function getDeptEmail(dept) {
-        const mainEmail = getMainEmail();
-        const localPart = mainEmail.split('@')[0];
-        const domain = mainEmail.split('@')[1];
-        // Use main email for all departments
-        return mainEmail;
+    // Get department email (currently same as main; kept for future split logic)
+    function getDeptEmail() {
+        return getMainEmail();
+    }
+    
+    function updateElements(selector, value, makeHref) {
+        document.querySelectorAll(selector).forEach(el => {
+            if (el.tagName === 'A') {
+                el.href = makeHref ? makeHref(value) : el.href;
+            }
+            el.textContent = value;
+        });
     }
     
     // Initialize contact information on page load
     function initContactInfo() {
         const email = getMainEmail();
         const phone = getPhone();
+        const telValue = phone.replace(/\s+/g, '');
         
-        // Replace email placeholders
-        document.querySelectorAll('[data-contact="email"]').forEach(el => {
-            if (el.tagName === 'A') {
-                el.href = 'mailto:' + email;
-                el.textContent = email;
-            } else {
-                el.textContent = email;
-            }
-        });
+        updateElements('[data-contact="email"]', email, v => 'mailto:' + v);
+        updateElements('[data-contact="phone"]', phone, () => 'tel:' + telValue);
         
-        // Replace phone placeholders
-        document.querySelectorAll('[data-contact="phone"]').forEach(el => {
-            if (el.tagName === 'A') {
-                el.href = 'tel:' + phone.replace(/\s+/g, '');
-                el.textContent = phone;
-            } else {
-                el.textContent = phone;
-            }
-        });
-        
-        // Replace department emails
         Object.keys(contactData.departments).forEach(dept => {
-            document.querySelectorAll('[data-contact="email-' + dept + '"]').forEach(el => {
-                const deptEmail = getDeptEmail(dept);
-                if (el.tagName === 'A') {
-                    el.href = 'mailto:' + deptEmail;
-                    el.textContent = deptEmail;
-                } else {
-                    el.textContent = deptEmail;
-                }
-            });
+            const deptEmail = getDeptEmail(dept);
+            updateElements(`[data-contact="email-${dept}"]`, deptEmail, v => 'mailto:' + v);
         });
     }
     

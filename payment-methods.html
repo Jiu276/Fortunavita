@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Fortunavita</title>
+    <title>Payment Methods - Fortunavita</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -26,45 +26,27 @@
         }
         .policy-container h2 {
             color: var(--text-dark);
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-        .policy-container h3 {
-            color: var(--text-dark);
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 1.6rem;
         }
         .policy-container p {
-            margin-bottom: 15px;
-            line-height: 1.8;
+            margin-bottom: 12px;
+            line-height: 1.7;
             color: var(--text-light);
         }
         .policy-container ul, .policy-container ol {
-            margin: 20px 0;
-            padding-left: 30px;
+            margin: 16px 0 20px 24px;
+            color: var(--text-light);
+            line-height: 1.7;
         }
         .policy-container li {
-            margin-bottom: 10px;
-            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+        .last-updated {
             color: var(--text-light);
-        }
-        .policy-container strong {
-            color: var(--text-dark);
-        }
-        .contact-info {
-            background: var(--bg-light);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
-        .contact-info p {
-            margin: 10px 0;
-        }
-        .contact-info i {
-            margin-right: 10px;
-            color: var(--primary-color);
+            font-style: italic;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -95,50 +77,48 @@
         </nav>
     </header>
 
-    <!-- About Us Content -->
+    <!-- Payment Methods Content -->
     <section class="policy-page">
         <div class="container">
             <div class="policy-container">
-                <h1>About Us</h1>
+                <h1>Payment Methods</h1>
+                <p class="last-updated">Last Updated: January 13, 2026</p>
 
-                <h2>Who We Are</h2>
-                <p><strong>Fortunavita</strong> — Your trusted source for lifestyle, wellness, and technology insights</p>
-                <p>Welcome to Fortunavita. We are a dedicated team passionate about providing high-quality content, product recommendations, and platform reviews that enhance everyday life.</p>
-
-                <h2>Our Story</h2>
-                <p>Founded in 2020, Fortunavita was born from a simple idea: to make valuable lifestyle information and honest product reviews accessible to everyone. What started as a small endeavor has grown into a trusted platform serving readers worldwide.</p>
-
-                <h2>Our Mission</h2>
-                <p>At Fortunavita, our mission is to deliver exceptional content that combines quality, authenticity, and practical value, while providing outstanding reader support and honest reviews.</p>
-
-                <h2>Our Values</h2>
+                <h2>Accepted Payment Methods</h2>
                 <ul>
-                    <li><strong>Quality First</strong>: We carefully curate and test every product and platform to ensure it meets our high standards.</li>
-                    <li><strong>Customer Satisfaction</strong>: Your happiness is our priority. We're committed to providing excellent support and valuable information.</li>
-                    <li><strong>Transparency</strong>: We maintain honest communication with our readers at every step, providing unbiased reviews and recommendations.</li>
-                    <li><strong>Integrity</strong>: We believe in responsible content creation that provides real value to our community.</li>
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>American Express</li>
+                    <li>PayPal</li>
+                    <li>Apple Pay</li>
+                    <li>Google Pay</li>
                 </ul>
 
-                <h2>Why Choose Us?</h2>
+                <h2>Currency</h2>
+                <p>All prices are displayed and processed in USD unless otherwise noted. Your bank may charge a currency conversion fee if your card uses a different currency.</p>
+
+                <h2>Payment Security</h2>
                 <ul>
-                    <li>✓ Premium quality content and honest reviews</li>
-                    <li>✓ Comprehensive platform and product analysis</li>
-                    <li>✓ Responsive reader support team</li>
-                    <li>✓ Regular updates with latest insights</li>
-                    <li>✓ Trusted information you can rely on</li>
+                    <li>All transactions are protected with SSL/TLS encryption.</li>
+                    <li>Payments are processed securely through PCI-DSS compliant gateways; we do not store full card numbers or CVV.</li>
                 </ul>
 
-                <h2>Get in Touch</h2>
-                <p>We love hearing from our readers! If you have any questions, suggestions, or just want to say hello, please don't hesitate to reach out.</p>
-                
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <span data-contact="email"></span></p>
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Room 1401, Unit 1, Building 6, Duhui Center, Luoyang Town, Taishun County, Wenzhou City, Zhejiang Province, China</p>
-                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <span data-contact="phone"></span></p>
-                    <p><i class="fas fa-clock"></i> <strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (EST)</p>
-                </div>
+                <h2>Billing Descriptor</h2>
+                <p>Charges may appear on your statement as "Fortunavita" or "Fortunavita Online".</p>
 
-                <p>Thank you for choosing Fortunavita. We're honored to be part of your journey!</p>
+                <h2>Taxes and Duties</h2>
+                <p>Orders may be subject to applicable taxes. For international orders, import duties and customs fees are the buyer's responsibility.</p>
+
+                <h2>Failed or Declined Payments</h2>
+                <ol>
+                    <li>Verify card details and available funds.</li>
+                    <li>Try another payment method.</li>
+                    <li>Contact your bank to allow international/online transactions.</li>
+                    <li>Reach us at <strong><span data-contact="email"></span></strong> for assistance.</li>
+                </ol>
+
+                <h2>Refunds</h2>
+                <p>Approved refunds are issued to the original payment method. Processing times depend on your bank (typically 5–10 business days).</p>
             </div>
         </div>
     </section>
