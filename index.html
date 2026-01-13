@@ -3,14 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fortunavita - Your trusted source for lifestyle insights, wellness tips, technology reviews, and product recommendations. Explore curated articles and expert reviews.">
+    <meta name="keywords" content="lifestyle blog, wellness, technology reviews, product recommendations, health tips, business insights">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Fortunavita">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fortunavita.com/">
+    <meta property="og:title" content="Fortunavita - Lifestyle & Wellness Blog">
+    <meta property="og:description" content="Your trusted source for lifestyle insights, wellness tips, technology reviews, and product recommendations.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fortunavita.com/">
+    <meta property="twitter:title" content="Fortunavita - Lifestyle & Wellness Blog">
+    <meta property="twitter:description" content="Your trusted source for lifestyle insights, wellness tips, technology reviews, and product recommendations.">
+    
     <title>Fortunavita - Lifestyle & Wellness Blog</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            border-radius: 4px;
+        }
+        .skip-to-content:focus {
+            top: 80px;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Fortunavita",
+      "url": "https://fortunavita.com/",
+      "description": "Your trusted source for lifestyle insights, wellness tips, technology reviews, and product recommendations",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fortunavita",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fortunavita.com/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fortunavita.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#home" class="skip-to-content">Skip to main content</a>
+    
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="container">
                 <a href="index.html" class="logo">
                     <i class="fas fa-leaf"></i>
@@ -62,14 +135,33 @@
                 </div>
             </div>
         </div>
-        <div class="slider-nav">
-            <button class="prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="next"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-nav">
+            <button class="prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
         </div>
-        <div class="slider-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
+        <div class="slider-dots" role="tablist" aria-label="Slider navigation">
+            <button class="dot active" data-slide="0" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+            <button class="dot" data-slide="1" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+            <button class="dot" data-slide="2" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+        </div>
+    </section>
+
+    <!-- Fortunavita Overview -->
+    <section id="overview" class="about-section overview-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose Fortunavita?</h2>
+                    <p>Fortunavita is more than a collection of links – it is an independent content hub created by a small editorial team. We research, test, and organize information so that you can quickly understand a product, a platform, or a lifestyle topic without being overwhelmed by advertising.</p>
+                    <p>Every guide and review on Fortunavita is written with clarity and practicality in mind. We summarize complex information into simple takeaways and always provide transparent pros and cons to help you make your own decision.</p>
+                    <ul>
+                        <li><strong>In-depth Articles:</strong> Read structured insights in our <a href="#blog">Latest Articles</a> section.</li>
+                        <li><strong>Independent Reviews:</strong> Explore curated products and platform reviews in <a href="#products">Featured Products &amp; Reviews</a>.</li>
+                        <li><strong>About Our Team:</strong> Learn who we are on the <a href="about-us.html">About Us</a> page.</li>
+                        <li><strong>Common Questions:</strong> Visit the <a href="faq.html">FAQ</a> page for quick answers.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -81,11 +173,13 @@
             <!-- Search and Filter -->
             <div class="blog-controls">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search articles...">
-                    <i class="fas fa-search"></i>
+                    <label for="searchInput" class="sr-only">Search articles</label>
+                    <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+                    <i class="fas fa-search" aria-hidden="true"></i>
                 </div>
                 <div class="category-filter">
-                    <select id="categoryFilter">
+                    <label for="categoryFilter" class="sr-only">Filter by category</label>
+                    <select id="categoryFilter" aria-label="Filter articles by category">
                         <option value="all">All Categories</option>
                         <option value="technology">Technology</option>
                         <option value="wellness">Wellness</option>
@@ -94,6 +188,19 @@
                         <option value="platform-review">Platform Reviews</option>
                     </select>
                 </div>
+            </div>
+
+            <!-- Featured Internal Resources -->
+            <div class="featured-links">
+                <h3>Fortunavita Resources</h3>
+                <ul>
+                    <li><a href="about-us.html">About Fortunavita &amp; our editorial approach</a></li>
+                    <li><a href="privacy-policy.html">How we handle your data (Privacy Policy)</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service for using Fortunavita</a></li>
+                    <li><a href="return-refund-policy.html">Return &amp; Refund Policy for purchases</a></li>
+                    <li><a href="shipping-policy.html">Shipping Policy and delivery information</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
             </div>
 
             <!-- Blog Grid -->
@@ -113,8 +220,8 @@
         <div class="container">
             <h2 class="section-title">Featured Products & Reviews</h2>
             <div class="products-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Premium Headphones">
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Premium Wireless Headphones" loading="lazy">
                     <div class="product-content">
                         <h3>Premium Wireless Headphones</h3>
                         <p class="product-category">Technology</p>
@@ -129,9 +236,9 @@
                         </div>
                         <a href="article.html?id=1" class="btn-secondary">Read Review</a>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop" alt="Yoga Mat">
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop" alt="Eco-Friendly Yoga Mat" loading="lazy">
                     <div class="product-content">
                         <h3>Eco-Friendly Yoga Mat</h3>
                         <p class="product-category">Wellness</p>
@@ -146,9 +253,9 @@
                         </div>
                         <a href="article.html?id=2" class="btn-secondary">Read Review</a>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&h=300&fit=crop" alt="Smart Watch">
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&h=300&fit=crop" alt="Smart Fitness Watch" loading="lazy">
                     <div class="product-content">
                         <h3>Smart Fitness Watch</h3>
                         <p class="product-category">Technology</p>
@@ -163,7 +270,7 @@
                         </div>
                         <a href="article.html?id=3" class="btn-secondary">Read Review</a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -192,7 +299,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="About Us">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Fortunavita team working together" loading="lazy">
                 </div>
             </div>
         </div>
@@ -204,47 +311,52 @@
             <h2 class="section-title">Get in Touch</h2>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" aria-label="Contact form">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="contactName" class="sr-only">Your Name</label>
+                            <input type="text" id="contactName" name="name" placeholder="Your Name" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="contactEmail" class="sr-only">Your Email</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="Your Email" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <select>
-                                <option>General Inquiry</option>
-                                <option>Product Review Request</option>
-                                <option>Partnership</option>
-                                <option>Feedback</option>
+                            <label for="contactSubject" class="sr-only">Subject</label>
+                            <select id="contactSubject" name="subject" required aria-required="true">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="review">Product Review Request</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="feedback">Feedback</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <label for="contactMessage" class="sr-only">Your Message</label>
+                            <textarea id="contactMessage" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary" aria-label="Submit contact form">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-info">
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <div>
                             <h4>Email</h4>
-                            <p data-contact="email"></p>
+                            <p><a href="mailto:contact@fortunavita.com" data-contact="email" data-fallback="contact@fortunavita.com">contact@fortunavita.com</a></p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p data-contact="phone"></p>
+                            <p><a href="tel:+8657700000000" data-contact="phone" data-fallback="+86 577 0000 0000">+86 577 0000 0000</a></p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <div>
                             <h4>Address</h4>
-                            <p>Room 1401, Unit 1, Building 6, Duhui Center, Luoyang Town, Taishun County, Wenzhou City, Zhejiang Province, China</p>
+                            <address>Room 1401, Unit 1, Building 6, Duhui Center, Luoyang Town, Taishun County, Wenzhou City, Zhejiang Province, China</address>
                         </div>
                     </div>
                 </div>
@@ -285,22 +397,13 @@
                         <li><a href="payment-methods.html">Payment Methods</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
                     <p>Subscribe for weekly updates</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email">
-                        <button type="submit">Subscribe</button>
+                    <form class="newsletter-form" aria-label="Newsletter subscription form">
+                        <label for="newsletterEmail" class="sr-only">Your email address</label>
+                        <input type="email" id="newsletterEmail" name="email" placeholder="Your email" required aria-required="true">
+                        <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -323,8 +426,8 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
     <script src="contact-info.js"></script>

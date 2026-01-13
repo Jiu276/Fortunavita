@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fortunavita Terms of Service outlining user responsibilities, ordering policies, warranties, disputes, and contact details.">
+    <meta name="robots" content="index, follow">
+    <meta name="effective-date" content="2025-01-01">
     <title>Terms of Service - Fortunavita</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            border-radius: 4px;
+        }
+        .skip-to-content:focus {
+            top: 80px;
+        }
         .policy-page {
             padding: 120px 0 60px;
             background: var(--bg-light);
@@ -75,12 +95,151 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+        .policy-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+            color: var(--text-light);
+        }
+        .policy-meta span,
+        .policy-meta time {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        .policy-highlight {
+            border-left: 4px solid var(--primary-color);
+            background: var(--bg-light);
+            padding: 20px 24px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .policy-highlight h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .policy-highlight ul {
+            margin: 0;
+        }
+        .policy-toc {
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 35px;
+        }
+        .policy-toc h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+        .policy-toc ol {
+            margin: 12px 0 0;
+            padding-left: 18px;
+        }
+        .policy-toc li {
+            margin-bottom: 8px;
+        }
+        .policy-toc a {
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .policy-toc a:hover,
+        .policy-toc a:focus {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        .policy-toc a:target,
+        .policy-toc a[aria-current="true"] {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        .policy-container h2:target,
+        .policy-container h3:target {
+            scroll-margin-top: 100px;
+            animation: highlight 1s ease;
+        }
+        @keyframes highlight {
+            0% { background-color: rgba(76, 175, 80, 0.1); }
+            100% { background-color: transparent; }
+        }
+        .policy-container a:focus,
+        .policy-container button:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        @media (max-width: 768px) {
+            .policy-container {
+                padding: 24px;
+            }
+            .policy-meta {
+                flex-direction: column;
+            }
+            .policy-container h1 {
+                font-size: 2rem;
+            }
+            .policy-container h2 {
+                font-size: 1.5rem;
+            }
+        }
+        @media print {
+            .header,
+            .footer,
+            .back-to-top,
+            .policy-highlight,
+            .policy-toc,
+            .skip-to-content {
+                display: none;
+            }
+            .policy-page {
+                padding: 0;
+                background: white;
+            }
+            .policy-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .policy-container h1 {
+                page-break-after: avoid;
+            }
+            .policy-container h2 {
+                page-break-after: avoid;
+                margin-top: 20px;
+            }
+            .policy-container a {
+                color: var(--text-dark);
+                text-decoration: underline;
+            }
+            .policy-container a[href^="#"]::after {
+                content: " (page " counter(page) ")";
+            }
+        }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Fortunavita Terms of Service",
+      "about": "Terms of Service",
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-01-01",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fortunavita"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#tos-title" class="skip-to-content">Skip to main content</a>
+    
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="container">
                 <a href="index.html" class="logo">
                     <i class="fas fa-leaf"></i>
@@ -105,18 +264,61 @@
     </header>
 
     <!-- Terms of Service Content -->
-    <section class="policy-page">
+    <section class="policy-page" role="main" aria-labelledby="tos-title">
         <div class="container">
             <div class="policy-container">
-                <h1>Terms of Service</h1>
-                <p class="last-updated">Last Updated: January 1, 2025</p>
+                <h1 id="tos-title">Terms of Service</h1>
+                <div class="policy-meta">
+                    <time datetime="2025-01-01" class="last-updated"><i class="fas fa-clock"></i> Last Updated: January 1, 2025</time>
+                    <span><i class="fas fa-book-open"></i> Estimated read time: 6 minutes</span>
+                    <span><i class="fas fa-flag"></i> Effective Date: January 1, 2025</span>
+                </div>
+
+                <div class="policy-highlight" role="note" aria-label="Key highlights">
+                    <h3>Key Highlights</h3>
+                    <ul>
+                        <li>Orders are only accepted once you receive a formal confirmation email.</li>
+                        <li>All payments are processed securely and never stored on Fortunavita servers.</li>
+                        <li>Disputes move through negotiation, mediation, and then arbitration or litigation.</li>
+                        <li>Your continued use of the Site means you accept any updated Terms.</li>
+                    </ul>
+                </div>
+
+                <nav class="policy-toc" aria-label="Terms of Service overview">
+                    <h3>On This Page</h3>
+                    <ol>
+                        <li><a href="#acceptance-of-terms">Acceptance of Terms</a></li>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#eligibility">Eligibility</a></li>
+                        <li><a href="#products-and-pricing">Products & Pricing</a></li>
+                        <li><a href="#orders-and-payment">Orders & Payment</a></li>
+                        <li><a href="#intellectual-property">Intellectual Property</a></li>
+                        <li><a href="#user-conduct">User Conduct</a></li>
+                        <li><a href="#warranties">Disclaimer of Warranties</a></li>
+                        <li><a href="#liability">Limitation of Liability</a></li>
+                        <li><a href="#indemnification">Indemnification</a></li>
+                        <li><a href="#governing-law">Governing Law</a></li>
+                        <li><a href="#dispute-resolution">Dispute Resolution</a></li>
+                        <li><a href="#severability">Severability</a></li>
+                        <li><a href="#changes">Changes to Terms</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ol>
+                </nav>
 
                 <p>Please read these Terms of Service ("Terms") carefully before using fortunavita.com (the "Site") operated by Fortunavita ("we," "us," or "our").</p>
 
-                <h2>Acceptance of Terms</h2>
+                <h2 id="acceptance-of-terms">Acceptance of Terms</h2>
                 <p>By accessing or using our Site, you agree to be bound by these Terms. If you do not agree to any part of these Terms, you may not access the Site or make any purchases.</p>
 
-                <h2>Eligibility</h2>
+                <h2 id="definitions">Definitions</h2>
+                <ul>
+                    <li><strong>"Site"</strong>: fortunavita.com and related subdomains.</li>
+                    <li><strong>"Products"</strong>: Any goods, digital items, or services offered on the Site.</li>
+                    <li><strong>"User"</strong> or <strong>"You"</strong>: Any individual or entity accessing or using the Site.</li>
+                    <li><strong>"Order Confirmation"</strong>: The email or on-screen confirmation indicating we have accepted your order.</li>
+                </ul>
+
+                <h2 id="eligibility">Eligibility</h2>
                 <p>By using this Site, you represent that:</p>
                 <ul>
                     <li>You are at least 18 years of age, or the age of majority in your jurisdiction</li>
@@ -124,38 +326,39 @@
                     <li>You will use this Site in accordance with these Terms</li>
                 </ul>
 
-                <h2>Products and Pricing</h2>
+                <h2 id="products-and-pricing">Products and Pricing</h2>
 
-                <h3>Product Information</h3>
+                <h3 id="product-information">Product Information</h3>
                 <ul>
                     <li>We strive to display accurate product descriptions, images, and pricing</li>
                     <li>Colors may vary slightly due to monitor settings</li>
                     <li>We reserve the right to limit quantities or discontinue products without notice</li>
                 </ul>
 
-                <h3>Pricing</h3>
+                <h3 id="pricing">Pricing</h3>
                 <ul>
                     <li>All prices are listed in USD unless otherwise noted</li>
                     <li>Prices are subject to change without notice</li>
                     <li>We are not responsible for pricing errors; we reserve the right to cancel orders with incorrect pricing</li>
                 </ul>
 
-                <h3>Availability</h3>
+                <h3 id="availability">Availability</h3>
                 <ul>
                     <li>All products are subject to availability</li>
                     <li>We reserve the right to refuse or limit orders</li>
                 </ul>
 
-                <h2>Orders and Payment</h2>
+                <h2 id="orders-and-payment">Orders and Payment</h2>
 
-                <h3>Order Acceptance</h3>
+                <h3 id="order-acceptance">Order Acceptance</h3>
+                <p><strong>Important:</strong> Your order is an offer to purchase our products. We may accept or decline your order at our sole discretion. An order confirmation email or on-screen message does not constitute acceptance—only a formal <strong>Order Confirmation</strong> (as defined above) indicates we have accepted your order.</p>
                 <ul>
                     <li>Your order is an offer to purchase our products</li>
                     <li>We may accept or decline your order at our sole discretion</li>
-                    <li>Order confirmation does not constitute acceptance</li>
+                    <li>Only a formal Order Confirmation email indicates acceptance</li>
                 </ul>
 
-                <h3>Payment Methods</h3>
+                <h3 id="payment-methods">Payment Methods</h3>
                 <p>We accept the following payment methods:</p>
                 <ul>
                     <li><strong>Credit Cards</strong>: Visa, Mastercard, American Express, Discover</li>
@@ -163,7 +366,7 @@
                     <li><strong>Debit Cards</strong>: All major debit cards with Visa or Mastercard logo</li>
                 </ul>
                 
-                <h3>Payment Processing</h3>
+                <h3 id="payment-processing">Payment Processing</h3>
                 <ul>
                     <li>All payments are processed securely through our trusted payment providers</li>
                     <li>We use SSL encryption to protect your payment information</li>
@@ -172,19 +375,20 @@
                     <li>You agree to provide current, complete, and accurate payment information</li>
                 </ul>
                 
-                <h3>Payment Security</h3>
+                <h3 id="payment-security">Payment Security</h3>
                 <p>We are committed to protecting your payment information. All transactions are encrypted using industry-standard SSL (Secure Socket Layer) technology. We comply with PCI DSS (Payment Card Industry Data Security Standard) requirements to ensure the highest level of security for your payment data.</p>
                 
-                <h3>Payment Issues</h3>
+                <h3 id="payment-issues">Payment Issues</h3>
                 <p>If you experience any payment issues:</p>
                 <ul>
                     <li>Ensure your payment method has sufficient funds</li>
                     <li>Verify your billing address matches the address on file with your payment provider</li>
                     <li>Contact your bank or payment provider if the issue persists</li>
-                    <li>Contact us at <strong><span data-contact="email-orders"></span></strong> for assistance</li>
+                    <li>Contact us at <strong><span data-contact="email-orders" data-fallback="orders@fortunavita.com">orders@fortunavita.com</span></strong> for assistance</li>
                 </ul>
+                <p>For details on how we handle your data, please review our <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
-                <h3>Order Cancellation</h3>
+                <h3 id="order-cancellation">Order Cancellation</h3>
                 <p>We reserve the right to cancel orders for any reason, including:</p>
                 <ul>
                     <li>Product availability issues</li>
@@ -192,7 +396,7 @@
                     <li>Suspected fraud</li>
                 </ul>
 
-                <h2>Intellectual Property</h2>
+                <h2 id="intellectual-property">Intellectual Property</h2>
                 <p>All content on this Site, including but not limited to:</p>
                 <ul>
                     <li>Text, graphics, logos, images</li>
@@ -209,7 +413,7 @@
                     <li>Use content for commercial purposes without consent</li>
                 </ul>
 
-                <h2>User Conduct</h2>
+                <h2 id="user-conduct">User Conduct</h2>
                 <p>You agree not to:</p>
                 <ul>
                     <li>Use the Site for any unlawful purpose</li>
@@ -220,7 +424,7 @@
                     <li>Collect user information without consent</li>
                 </ul>
 
-                <h2>Disclaimer of Warranties</h2>
+                <h2 id="warranties">Disclaimer of Warranties</h2>
                 <p class="all-caps">The Site and Products are Provided "As Is" and "As Available" Without Warranties of Any Kind, Either Express or Implied, Including But Not Limited To:</p>
                 <ul>
                     <li>Merchantability</li>
@@ -235,16 +439,18 @@
                     <li>The Site is free of viruses or harmful components</li>
                 </ul>
 
-                <h2>Limitation of Liability</h2>
+                <h2 id="liability">Limitation of Liability</h2>
                 <p class="all-caps">To the Fullest Extent Permitted by Law, Fortunavita Shall Not Be Liable For:</p>
                 <ul>
                     <li>Indirect, incidental, special, consequential, or punitive damages</li>
                     <li>Loss of profits, data, use, or goodwill</li>
                     <li>Damages arising from your use of the Site</li>
+                    <li>Damages resulting from events beyond our reasonable control, including but not limited to natural disasters, war, terrorism, labor disputes, or failures of third-party services</li>
                 </ul>
                 <p>Our maximum liability shall not exceed the amount you paid for the product(s) in question.</p>
+                <p><strong>Note:</strong> Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above limitations may not apply to you. In such cases, our liability will be limited to the fullest extent permitted by applicable law.</p>
 
-                <h2>Indemnification</h2>
+                <h2 id="indemnification">Indemnification</h2>
                 <p>You agree to indemnify and hold harmless Fortunavita, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, costs, or expenses arising from:</p>
                 <ul>
                     <li>Your use of the Site</li>
@@ -252,10 +458,11 @@
                     <li>Your violation of any third-party rights</li>
                 </ul>
 
-                <h2>Governing Law</h2>
+                <h2 id="governing-law">Governing Law</h2>
                 <p>These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.</p>
+                <p><strong>Consumer Rights:</strong> Nothing in these Terms affects your statutory rights as a consumer. If you are a consumer, you may have additional rights under the laws of your jurisdiction that cannot be excluded or limited by these Terms.</p>
 
-                <h2>Dispute Resolution</h2>
+                <h2 id="dispute-resolution">Dispute Resolution</h2>
                 <p>Any disputes arising from these Terms or your use of the Site shall be resolved through:</p>
                 <ol>
                     <li><strong>Negotiation</strong>: We will attempt to resolve disputes informally</li>
@@ -263,19 +470,19 @@
                     <li><strong>Arbitration/Litigation</strong>: As a last resort, disputes may be resolved through binding arbitration or in courts of competent jurisdiction</li>
                 </ol>
 
-                <h2>Severability</h2>
+                <h2 id="severability">Severability</h2>
                 <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall remain in full force and effect.</p>
 
-                <h2>Changes to Terms</h2>
+                <h2 id="changes">Changes to Terms</h2>
                 <p>We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the Site. Your continued use of the Site constitutes acceptance of the modified Terms.</p>
 
-                <h2>Contact Us</h2>
+                <h2 id="contact">Contact Us</h2>
                 <p>For questions about these Terms:</p>
                 
                 <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <span data-contact="email-legal"></span></p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <span data-contact="email-legal" data-fallback="legal@fortunavita.com">legal@fortunavita.com</span></p>
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Room 1401, Unit 1, Building 6, Duhui Center, Luoyang Town, Taishun County, Wenzhou City, Zhejiang Province, China</p>
-                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <span data-contact="phone"></span></p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <span data-contact="phone" data-fallback="+86 577 0000 0000">+86 577 0000 0000</span></p>
                 </div>
             </div>
         </div>
@@ -317,11 +524,11 @@
                 <div class="footer-social">
                     <h4>Follow Us</h4>
                     <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-newsletter">
