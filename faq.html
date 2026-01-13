@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Fortunavita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .faq-page {
+            padding: 120px 0 60px;
+            background: var(--bg-light);
+        }
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .faq-header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 30px;
+        }
+        .faq-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .faq-question {
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+        .faq-question i {
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            color: var(--text-light);
+            line-height: 1.8;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer.active {
+            max-height: 1000px;
+            padding-top: 10px;
+        }
+        .faq-answer ul {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        .faq-answer li {
+            margin-bottom: 5px;
+        }
+        .faq-answer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+        .contact-cta {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--bg-white);
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+        }
+        .contact-cta a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-cta a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Fortunavita</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FAQ Content -->
+    <section class="faq-page">
+        <div class="container">
+            <div class="faq-header">
+                <h1>Frequently Asked Questions (FAQ)</h1>
+                <p>Find quick answers to common questions below. Can't find what you're looking for? <a href="contact-us.html" style="color: var(--primary-color);">Contact us</a>.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2>Orders & Payments</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I place an order?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Simply browse our products, add items to your cart, and proceed to checkout. You'll need to provide your shipping address and payment information to complete your order.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We accept Visa, Mastercard, American Express, Discover, PayPal, Apple Pay, and Google Pay.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I modify or cancel my order?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Orders can be modified or canceled within 2 hours of placement. After this window, your order may have already been processed. Please contact us immediately at <span data-contact="email-orders"></span>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is my payment information secure?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We use industry-standard SSL encryption and partner with trusted payment processors to ensure your information is always protected.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2>Shipping & Delivery</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How long will it take to receive my order?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li><strong>Processing Time</strong>: 1-3 business days</li>
+                            <li><strong>Domestic Shipping</strong>: 5-8 business days (standard)</li>
+                            <li><strong>International Shipping</strong>: 10-30 business days depending on location</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you ship internationally?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we ship to most countries worldwide. Shipping costs and transit times vary by location.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How can I track my order?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Once your order ships, you'll receive an email with your tracking number. You can also track your order by logging into your account.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do I have to pay customs fees?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        For international orders, import duties, taxes, and customs fees are the buyer's responsibility and are not included in our prices.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2>Returns & Refunds</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is your return policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a 30-day return policy. Items must be unused, in original condition, and in original packaging.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I return an item?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Email us at <span data-contact="email-returns"></span> with your order number and reason for return. We'll provide you with return instructions.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>When will I receive my refund?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Refunds are processed within 5-7 business days after we receive and inspect your return.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you offer exchanges?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We only offer exchanges for defective or damaged items. Please contact us for assistance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2>Products</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Are your products authentic?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We only sell genuine, high-quality products.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What if I receive a damaged item?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Contact us within 48 hours with photos of the damage. We'll arrange a replacement or refund at no additional cost.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you offer gift wrapping?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Gift wrapping is available at checkout for an additional fee.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2>Account & Privacy</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I create an account?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Click "Sign Up" at the top of our website and follow the prompts. You can also create an account during checkout.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I update my account information?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Log into your account and navigate to "Account Settings" to update your information.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do you protect my privacy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We take privacy seriously. Please review our <a href="privacy-policy.html">Privacy Policy</a> for detailed information on how we collect, use, and protect your data.
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <p>Still have questions? <a href="contact-us.html">Contact our support team</a> — we're happy to help!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Fortunavita</span>
+                    </div>
+                    <p>Your trusted source for lifestyle, wellness, and technology insights.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="return-refund-policy.html">Return & Refund Policy</a></li>
+                        <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for weekly updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fortunavita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="contact-info.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                if (q !== element) {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            if (isActive) {
+                element.classList.remove('active');
+                answer.classList.remove('active');
+            } else {
+                element.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
+
