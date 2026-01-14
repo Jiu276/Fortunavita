@@ -351,11 +351,14 @@ function setupEventListeners() {
     }
 
     // Newsletter form
-    document.querySelector('.newsletter-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for subscribing to our newsletter!');
-        e.target.reset();
-    });
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for subscribing to our newsletter!');
+            e.target.reset();
+        });
+    }
 }
 
 // Initialize slider
@@ -459,5 +462,37 @@ function initCookieBanner() {
 
     manageBtn.addEventListener('click', () => {
         alert('Please implement your cookie preferences modal or page here.');
+    });
+}
+
+// Product Sort Functionality
+const productSort = document.getElementById('productSort');
+if (productSort) {
+    productSort.addEventListener('change', function() {
+        const productsGrid = document.getElementById('productsGrid');
+        if (!productsGrid) return;
+        
+        const products = Array.from(productsGrid.children);
+        const sortValue = this.value;
+        
+        products.sort((a, b) => {
+            if (sortValue === 'rating-high') {
+                const ratingA = parseFloat(a.querySelector('.rating span')?.textContent || '0');
+                const ratingB = parseFloat(b.querySelector('.rating span')?.textContent || '0');
+                return ratingB - ratingA;
+            } else if (sortValue === 'rating-low') {
+                const ratingA = parseFloat(a.querySelector('.rating span')?.textContent || '0');
+                const ratingB = parseFloat(b.querySelector('.rating span')?.textContent || '0');
+                return ratingA - ratingB;
+            } else if (sortValue === 'category') {
+                const categoryA = a.querySelector('.product-category')?.textContent || '';
+                const categoryB = b.querySelector('.product-category')?.textContent || '';
+                return categoryA.localeCompare(categoryB);
+            }
+            return 0; // default order
+        });
+        
+        // Re-append sorted products
+        products.forEach(product => productsGrid.appendChild(product));
     });
 }

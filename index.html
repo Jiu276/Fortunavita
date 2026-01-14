@@ -219,7 +219,21 @@
     <section id="products" class="products-section">
         <div class="container">
             <h2 class="section-title">Featured Products & Reviews</h2>
-            <div class="products-grid">
+            
+            <!-- Product Sort and Filter -->
+            <div class="blog-controls" style="margin-bottom: 2rem;">
+                <div class="category-filter" style="margin-left: auto;">
+                    <label for="productSort" class="sr-only">Sort products</label>
+                    <select id="productSort" aria-label="Sort products">
+                        <option value="default">Sort by: Default</option>
+                        <option value="rating-high">Highest Rating</option>
+                        <option value="rating-low">Lowest Rating</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
                 <article class="product-card">
                     <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Premium Wireless Headphones" loading="lazy">
                     <div class="product-content">
@@ -285,16 +299,16 @@
                     <p>Our team of experts carefully curates content across technology, wellness, business, and lifestyle categories to bring you the most valuable information and honest reviews.</p>
                     <div class="stats">
                         <div class="stat">
-                            <h3>500+</h3>
-                            <p>Articles Published</p>
+                            <h3>Expert Reviews</h3>
+                            <p>Independent product and platform analysis</p>
                         </div>
                         <div class="stat">
-                            <h3>50K+</h3>
-                            <p>Monthly Readers</p>
+                            <h3>Honest Insights</h3>
+                            <p>Transparent pros and cons for every review</p>
                         </div>
                         <div class="stat">
-                            <h3>100+</h3>
-                            <p>Products Reviewed</p>
+                            <h3>Regular Updates</h3>
+                            <p>Fresh content published weekly</p>
                         </div>
                     </div>
                 </div>
@@ -376,7 +390,7 @@
                     <p>Your trusted source for lifestyle, wellness, and technology insights.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#blog">Blog</a></li>
@@ -388,7 +402,7 @@
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Legal</h4>
+                    <h3>Legal</h3>
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-of-service.html">Terms of Service</a></li>
@@ -398,7 +412,7 @@
                     </ul>
                 </div>
                 <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
+                    <h3>Newsletter</h3>
                     <p>Subscribe for weekly updates</p>
                     <form class="newsletter-form" aria-label="Newsletter subscription form">
                         <label for="newsletterEmail" class="sr-only">Your email address</label>
